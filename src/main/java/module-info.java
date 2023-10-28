@@ -1,4 +1,4 @@
-module proyecto2.proyecto2 {
+module cliente{
     requires javafx.controls;
     requires javafx.fxml;
         requires javafx.web;
@@ -8,9 +8,10 @@ module proyecto2.proyecto2 {
             requires net.synedra.validatorfx;
             requires org.kordamp.ikonli.javafx;
             requires org.kordamp.bootstrapfx.core;
-            requires eu.hansolo.tilesfx;
             requires com.almasb.fxgl.all;
-    
-    opens proyecto2.proyecto2 to javafx.fxml;
-    exports proyecto2.proyecto2;
+    requires java.scripting;
+    requires org.mozilla.rhino;
+
+    opens cliente to javafx.fxml;
+    exports cliente;
 }
